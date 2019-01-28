@@ -179,6 +179,36 @@ window.CryptoPro.call('getCertsList').then(function (certList) {
 });
 ```
 
+Пример обертки API на Angular:
+
+``` js
+/**
+   * Возвращает список сертификатов, доступных в системе
+   * @param resetCache - Нужно ли сбросить кэш списка сертификатов (По умолчанию false)
+   */
+  getCertsList(resetCache: boolean = false) {
+    return new Observable(observer => {
+      crypto.call('getCertsList', resetCache).then(res => {
+        observer.next(res);
+      });
+    });
+  }
+  
+/**
+   * Создание подписи строки по хешу сертификата
+   * @param hash - Хеш (отпечаток) сертификата
+   * @param dataInBase64 - Данные в Base64
+   * @param signType - Тип подписи (true: отделенная, false: присоединенная). По умолчанию true
+   */
+  signData(hash: string, dataInBase64: string, signType: boolean = true) {
+    return new Observable(observer => {
+      crypto.call('signData', hash, dataInBase64, signType).then(res => {
+        observer.next(res);
+      });
+    });
+  }
+```
+
 ### Доступные методы
 Список доступных методов можно посмотреть в файле `src/api.js`.
 
