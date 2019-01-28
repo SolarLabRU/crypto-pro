@@ -1,7 +1,7 @@
 {
   "name": "@solarlabru/cryptopro-solarlab",
-  "version": "1.0.2",
-  "description": "API для взаимодействия с КриптоПро",
+  "version": "1.0.3",
+  "description": "Модуль Angular (4+) для взаимодействия с API КриптоПро",
   "main": "src/index.js",
   "scripts": {
     "start": "node_modules/.bin/webpack --config webpack.config.js",
