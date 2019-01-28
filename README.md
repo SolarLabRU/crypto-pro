@@ -16,7 +16,7 @@
 ## Установка и настройка
 ### NPM
 ```bash
-npm install cryptopro-solarlab
+npm install @solarlabru/cryptopro-solarlab
 ```
 
 ### Bower
