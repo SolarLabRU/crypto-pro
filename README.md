@@ -1,5 +1,6 @@
 # CryptoPro
-Единое, асинхронное API для взаимодействия с КриптоПРО ЭЦП Browser Plug-In (IE8+)
+Единое, асинхронное API для взаимодействия с КриптоПРО ЭЦП Browser Plug-In (IE8+).
+Пакет предназначен для использования в приложении, написанном на Angular (версия 4+).
 
 ## Поддерживаемые браузеры
 - [Google Chrome](https://www.google.ru/chrome/browser/desktop/) (v45+) с расширением [CryptoPro Extension for CAdES Browser Plug-in](https://chrome.google.com/webstore/detail/cryptopro-extension-for-c/iifchhfnnmpdbibifmljnfjhpififfog?utm_source=chrome-app-launcher-info-dialog)
